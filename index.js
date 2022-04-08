@@ -3,7 +3,7 @@ let weather = {
     apiKey: "21155f708c957d5fc264f08905db6419",
 
     zipCode: function(){
-        this.fetchWeather(document.querySelector(".searchBar").value)
+        this.fetchWeather(document.querySelector(".searchBar").value);
     },
 
     fetchWeather: function(zipCode){
