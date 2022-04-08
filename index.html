@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <div class="card">
+        <div class = "search">
+            <input type="text" class="searchBar" placeholder="enter zip code">
+            <button class="searchButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path></g></svg>
+            </button>
+        </div>
+        <div class="weather">
+            <div class = "cityTime">
+                <h2 class="city">-</h2>
+                <h4 class="date">-</h4>
+            </div>
+            <div class="pretty">
+                <h1 class="temperature">-°</h1>
+                <ul class="hiLow">
+                    <li class="tempHigh">high: -°</li>
+                    <li class="tempLow">low: -°</li>
+                </ul>
+                <img src="" alt="" class="icon">
+            </div>
+            <div class="description">-</div>
+            <div class="humidity">humidity: -</div>
+            <div class="wind">wind: -</div>
+        </div>
+        <div class="futureWeather">
+            <div class="tomorrow">
+                <ul class="hiLow">
+                    <li class="weekday1">tomorrow</li>
+                    <img src="" alt="" class="tomorrowIcon">
+                    <li class="tomorrowTempHigh">high: -°</li>
+                    <li class="tomorrowTempLow">low: -°</li>
+                </ul>
+            </div>
+            <div class="twoDays">
+                <ul class="hiLow">
+                    <li class="weekday2">2 days</li>
+                    <img src="" alt="" class="twoDaysIcon">
+                    <li class="twoDaysTempHigh">high: -°</li>
+                    <li class="twoDaysTempLow">low: -°</li>
+                </ul>
+            </div>
+            <div class="threeDays">
+                <ul class="hiLow">
+                    <li class="weekday3">3 days</li>
+                    <img src="" alt="" class="threeDaysIcon">
+                    <li class="threeDaysTempHigh">high: -°</li>
+                    <li class="threeDaysTempLow">low: -°</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
