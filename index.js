@@ -44,7 +44,7 @@ let weather = {
                 document.querySelector(".temperature").innerText = temp+"°";
                 document.querySelector(".tempHigh").innerText = "high: "+tempHigh+"°";
                 document.querySelector(".tempLow").innerText = "low: "+tempLow+"°";
-                document.querySelector(".icon").src="http://openweathermap.org/img/wn/"+icon+"@2x.png";
+                document.querySelector(".icon").src="https://openweathermap.org/img/wn/"+icon+"@2x.png";
                 document.querySelector(".description").innerText = description;
                 document.querySelector(".humidity").innerText = "humidity: "+humidity+"%";
                 document.querySelector(".wind").innerText = "wind: "+windSpeed+" mph "+getDirection();
@@ -65,9 +65,9 @@ let weather = {
                 let tomorrowIcon = data.daily[1].weather[0].icon;
                 let twoDaysIcon = data.daily[2].weather[0].icon;
                 let threeDaysIcon = data.daily[3].weather[0].icon;
-                document.querySelector(".tomorrowIcon").src="http://openweathermap.org/img/wn/"+tomorrowIcon+".png";
-                document.querySelector(".twoDaysIcon").src="http://openweathermap.org/img/wn/"+twoDaysIcon+".png";
-                document.querySelector(".threeDaysIcon").src="http://openweathermap.org/img/wn/"+threeDaysIcon+".png";
+                document.querySelector(".tomorrowIcon").src="https://openweathermap.org/img/wn/"+tomorrowIcon+".png";
+                document.querySelector(".twoDaysIcon").src="https://openweathermap.org/img/wn/"+twoDaysIcon+".png";
+                document.querySelector(".threeDaysIcon").src="https://openweathermap.org/img/wn/"+threeDaysIcon+".png";
 
                 let tomorrowDate = new Date();
                 tomorrowDate.setDate(new Date().getDate() + 1);
