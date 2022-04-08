@@ -8,7 +8,7 @@ let weather = {
 
     fetchWeather: function(zipCode){
         fetch(
-            "http://api.openweathermap.org/geo/1.0/zip?zip="+zipCode+"&appid="+this.apiKey
+            "https://api.openweathermap.org/geo/1.0/zip?zip="+zipCode+"&appid="+this.apiKey
         )
         .then((response) => response.json())
         .then((zipData) => {
