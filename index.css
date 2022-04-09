@@ -3,10 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin:0;
     font-family: 'Poppins', sans-serif;
     background: url("https://source.unsplash.com/random/1920x1800/?clouds") repeat 0 0;
     -webkit-animation: slide 1000s linear infinite;
@@ -23,18 +20,18 @@ body {
     border-radius: 30px;
     width: 100%;
     max-width: 300px;
-    margin: 2em;
+    margin: 1em;
     animation-duration: 2s;
     animation-name: slidein;
 }
 @keyframes slidein {
     from {
         margin-left: 100%;
-        width: 300%;
+        width: 100%;
     }
 
     to {
-        margin-left: 3.5%;
+        margin-left: 2%;
         width: 100%;
     }
 }
