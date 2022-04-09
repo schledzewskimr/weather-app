@@ -41,23 +41,22 @@ body {
 .search{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 50px;
 
 }
 .searchBar{
     border-radius: 4px;
+    width:120px;
+    padding: .75em;
     border: none;
     outline: none;
-    padding: .6em;
     background-color: rgba(30, 29, 29, 0.726);
     color: whitesmoke;
     font-family: inherit;
     font-size: medium;
-    margin-left: 2em;
 }
 button{
-    margin: 1em;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
@@ -65,7 +64,6 @@ button{
     border: none;
     color: white;
     background-color: #00000000;
-    padding: .7em;
     font-size: 1.5em;
     transition: .5s
 }
