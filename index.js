@@ -105,7 +105,7 @@ let weather = {
                     let tempHigh = Math.round(data.daily[0].temp.max);
                     let tempLow = Math.round(data.daily[0].temp.min);
                     let humidity = data.current.humidity;
-                    let windSpeed = Math.round(data.current.wind_speed);
+                    let windSpeed = Math.round((data.current.wind_speed)*2.2);
                     let windDeg = data.current.wind_deg;
                     var directions = ["north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west"]
                     function getDirection() {
