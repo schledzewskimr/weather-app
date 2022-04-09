@@ -88,6 +88,7 @@ let weather = {
     }
 }
 
+
 document.querySelector(".searchButton").addEventListener("click",function(){
     weather.zipCode();
     document.querySelector(".searchBar").value=""

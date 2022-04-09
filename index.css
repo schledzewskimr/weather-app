@@ -18,11 +18,11 @@ body {
 .card {
     background: #000000a0;
     color: whitesmoke;
-    padding: 2em;
+    padding: 1em;
     border: whitesmoke solid 1vh;
     border-radius: 30px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 2em;
     animation-duration: 2s;
     animation-name: slidein;
@@ -54,6 +54,7 @@ body {
     color: whitesmoke;
     font-family: inherit;
     font-size: medium;
+    margin-left: 2em;
 }
 button{
     margin: 1em;
