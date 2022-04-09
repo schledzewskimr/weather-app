@@ -19,8 +19,8 @@ body {
     border: whitesmoke solid 1vh;
     border-radius: 30px;
     width: 100%;
-    max-width: 300px;
-    margin: 1em;
+    max-width: 330px;
+    margin: 0;
     animation-duration: 2s;
     animation-name: slidein;
 }
@@ -31,7 +31,7 @@ body {
     }
 
     to {
-        margin-left: 4%;
+        margin-left: 0%;
         width: 100%;
     }
 }
