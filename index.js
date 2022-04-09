@@ -166,12 +166,13 @@ let weather = {
 
 document.querySelector(".searchButton").addEventListener("click",function(){
     weather.zipCode();
-    document.querySelector(".searchBar").value=""
 })
 
 document.querySelector(".searchBar").addEventListener("keyup", function(event){
     if(event.key == "Enter"){
         weather.zipCode();
-        document.querySelector(".searchBar").value=""
     }
+})
+document.querySelector(".units").addEventListener("click", function(){
+    weather.zipCode();
 })
