@@ -41,7 +41,6 @@ let weather = {
                         let direction = Math.round(((windDeg %= 360) < 0 ? windDeg + 360 : windDeg) / 45) % 8
                         return directions[direction]
                     }
-                    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?," + description +",clouds)"
                     document.querySelector(".date").innerText = date;
                     document.querySelector(".city").innerText = cityName;
                     document.querySelector(".temperature").innerText = temp+"°";
@@ -109,7 +108,6 @@ let weather = {
                         let direction = Math.round(((windDeg %= 360) < 0 ? windDeg + 360 : windDeg) / 45) % 8
                         return directions[direction]
                     }
-                    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?," + description +",clouds)"
                     document.querySelector(".date").innerText = date;
                     document.querySelector(".city").innerText = cityName;
                     document.querySelector(".temperature").innerText = temp+"°";
@@ -195,7 +193,6 @@ let weather = {
                         let direction = Math.round(((windDeg %= 360) < 0 ? windDeg + 360 : windDeg) / 45) % 8
                         return directions[direction]
                     }
-                    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?," + description +",clouds)"
                     document.querySelector(".date").innerText = date;
                     document.querySelector(".city").innerText = name;
                     document.querySelector(".temperature").innerText = temp+"°";
@@ -264,7 +261,6 @@ let weather = {
                         let direction = Math.round(((windDeg %= 360) < 0 ? windDeg + 360 : windDeg) / 45) % 8
                         return directions[direction]
                     }
-                    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080/?," + description +",clouds)"
                     document.querySelector(".date").innerText = date;
                     document.querySelector(".city").innerText = name;
                     document.querySelector(".temperature").innerText = temp+"°";
