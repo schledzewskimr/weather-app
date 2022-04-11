@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin:0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background: url("https://source.unsplash.com/random/1920x1080/?clouds") repeat 0 0;
     -webkit-animation: slide 1000s linear infinite;
@@ -19,10 +19,11 @@ body {
     border: whitesmoke solid 1vh;
     border-radius: 30px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     max-width: 500px;
     max-height: 500px;
     margin: 10px;
+    align-items: stretch;
 }
 
 .search{
@@ -84,20 +85,19 @@ h1{
 .pretty{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1em;
 }
 ul.hiLow{
-    padding-top:2em;
+    margin: auto;
     padding-left: 8px;
     padding-right: 8px;
     list-style-type: none;
-    padding-top:2em;
     font-size: small;
     color: #f0ecec9e;
 }
 .cityTime{
     display: flex;
     justify-content: space-between;
+    min-height: 0;
 }
 h4{
     display: flex;
