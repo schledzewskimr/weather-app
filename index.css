@@ -41,6 +41,7 @@ body {
     color: whitesmoke;
     font-family: inherit;
     font-size: medium;
+    caret-color: rgba(245, 245, 245, 0.253);
 }
 
 .searchButton{
@@ -134,6 +135,7 @@ h4{
     background-color: rgba(30, 29, 29, 0.726);
     -webkit-transition: .4s;
     transition: .4s;
+    cursor: default;
 }
 .slider:before {
     position: absolute;
