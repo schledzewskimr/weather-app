@@ -105,6 +105,7 @@ h4{
     align-items: center;
 }
 .futureWeather{
+    margin-top: 1em;
     display: flex;
     justify-content: space-evenly;
 }
