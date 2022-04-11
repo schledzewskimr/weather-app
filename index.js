@@ -318,11 +318,13 @@ document.querySelector(".searchButton").addEventListener("click",function(){
         weather.zipCode();
         document.querySelector(".weather").classList.add("visible");
         document.querySelector(".futureWeather").classList.add("visible");
+        document.querySelector(".card").classList.add("visible");
     }
     else{
         weather.cityWeather();
         document.querySelector(".weather").classList.add("visible");
         document.querySelector(".futureWeather").classList.add("visible");
+        document.querySelector(".card").classList.add("visible");
     }
 })
 
@@ -333,11 +335,13 @@ document.querySelector(".searchBar").addEventListener("keyup", function(event){
             weather.zipCode();
             document.querySelector(".weather").classList.add("visible");
             document.querySelector(".futureWeather").classList.add("visible");
+            document.querySelector(".card").classList.add("visible");
         }
         else{
             weather.cityWeather();
             document.querySelector(".weather").classList.add("visible");
             document.querySelector(".futureWeather").classList.add("visible");
+            document.querySelector(".card").classList.add("visible");
         }
     }
 })
@@ -347,10 +351,12 @@ document.querySelector(".units").addEventListener("click", function(){
         weather.zipCode();
         document.querySelector(".weather").classList.add("visible");
         document.querySelector(".futureWeather").classList.add("visible");
+        document.querySelector(".card").classList.add("visible");
     }
     else{
         weather.cityWeather();
         document.querySelector(".weather").classList.add("visible");
         document.querySelector(".futureWeather").classList.add("visible");
+        document.querySelector(".card").classList.add("visible");
     }
 })
