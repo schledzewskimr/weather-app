@@ -118,7 +118,7 @@ h4{
 }
 .futureWeather.visible{
     opacity: 100%;
-    transition: opacity 2s ease-in;
+    transition: opacity 3s ease-in;
 }
 .weekday1{
     display: flex;
