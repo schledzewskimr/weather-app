@@ -9,7 +9,7 @@ let weather = {
     cityWeather: function(){
         this.cityFetchWeather(document.querySelector(".searchBar").value);
     },
-    
+
     cityFetchWeather:function(cityName){
         fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid="+this.apiKey+"&units=imperial"
         )
@@ -168,7 +168,6 @@ let weather = {
             let lon = zipData.lon;
 
             const cb = document.querySelector('.units');
-            console.log(cb.checked);
             
             if(cb.checked){
 
@@ -202,7 +201,6 @@ let weather = {
                     document.querySelector(".description").innerText = description;
                     document.querySelector(".humidity").innerText = "humidity: "+humidity+"%";
                     document.querySelector(".wind").innerText = "wind: "+windSpeed+" mph "+getDirection();
-
 
                     let tomorrowTempHigh = Math.round(data.daily[1].temp.max);
                     document.querySelector(".tomorrowTempHigh").innerText = "high: "+tomorrowTempHigh+"°";
@@ -261,6 +259,7 @@ let weather = {
                         let direction = Math.round(((windDeg %= 360) < 0 ? windDeg + 360 : windDeg) / 45) % 8
                         return directions[direction]
                     }
+
                     document.querySelector(".date").innerText = date;
                     document.querySelector(".city").innerText = name;
                     document.querySelector(".temperature").innerText = temp+"°";
@@ -270,7 +269,6 @@ let weather = {
                     document.querySelector(".description").innerText = description;
                     document.querySelector(".humidity").innerText = "humidity: "+humidity+"%";
                     document.querySelector(".wind").innerText = "wind: "+windSpeed+" mph "+getDirection();
-
 
                     let tomorrowTempHigh = Math.round(data.daily[1].temp.max);
                     document.querySelector(".tomorrowTempHigh").innerText = "high: "+tomorrowTempHigh+"°";
@@ -311,7 +309,6 @@ let weather = {
     }
 }
 
-
 document.querySelector(".searchButton").addEventListener("click",function(){
     const searchRequest = document.querySelector(".searchBar").value;
     if(!isNaN(searchRequest)){
@@ -345,6 +342,7 @@ document.querySelector(".searchBar").addEventListener("keyup", function(event){
         }
     }
 })
+
 document.querySelector(".units").addEventListener("click", function(){
     const searchRequest = document.querySelector(".searchBar").value;
     if(!isNaN(searchRequest)){
