@@ -40,7 +40,7 @@ body {
 
 .searchBar{
     border-radius: 4px;
-    max-width:200px;
+    max-width:175px;
     padding: .75em;
     border: none;
     outline: none;
@@ -178,6 +178,7 @@ h4{
 }
 .slider:after{
     justify-content: center;
+    overflow: hidden;
     content:" f °  c °";
     color: white;
 }
