@@ -27,7 +27,7 @@ body {
 }
 .card.visible{
     height: 470px;
-    transition: height ease 2s;
+    transition: height ease 1.5s;
 }
 
 .search{
