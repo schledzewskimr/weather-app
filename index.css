@@ -19,8 +19,10 @@ body {
     border: whitesmoke solid 1vh;
     border-radius: 30px;
     width: 100%;
-    max-width: 330px;
-    margin: 0;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 10px;
 }
 
 .search{
@@ -33,7 +35,7 @@ body {
 
 .searchBar{
     border-radius: 4px;
-    width:120px;
+    max-width:200px;
     padding: .75em;
     border: none;
     outline: none;
@@ -43,17 +45,19 @@ body {
     font-size: medium;
     caret-color: rgba(245, 245, 245, 0.253);
 }
-
+.inputter{
+    display: flex;
+    align-items: center;
+}
 .searchButton{
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-left: 8px;
     border: none;
     color: white;
     background-color: #00000000;
     font-size: 1.5em;
-    transition: .5s
+    transition: .5s;
 }
 .searchButton:hover{
     color: greenyellow;
