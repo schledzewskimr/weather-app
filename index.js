@@ -57,18 +57,39 @@ let weather = {
                     document.querySelector(".twoDaysTempHigh").innerText = "high: "+twoDaysTempHigh+"°";
                     let threeDaysTempHigh = Math.round(data.daily[3].temp.max);
                     document.querySelector(".threeDaysTempHigh").innerText = "high: "+threeDaysTempHigh+"°";
+                    let fourDaysTempHigh = Math.round(data.daily[4].temp.max);
+                    document.querySelector(".fourDaysTempHigh").innerText = "high: "+fourDaysTempHigh+"°";
+                    let fiveDaysTempHigh = Math.round(data.daily[5].temp.max);
+                    document.querySelector(".fiveDaysTempHigh").innerText = "high: "+fiveDaysTempHigh+"°";
+                    let sixDaysTempHigh = Math.round(data.daily[6].temp.max);
+                    document.querySelector(".sixDaysTempHigh").innerText = "high: "+sixDaysTempHigh+"°";
+                    
                     let tomorrowTempLow = Math.round(data.daily[1].temp.min);
                     document.querySelector(".tomorrowTempLow").innerText = "low: "+tomorrowTempLow+"°";
                     let twoDaysTempLow = Math.round(data.daily[2].temp.min);
                     document.querySelector(".twoDaysTempLow").innerText = "low: " +twoDaysTempLow+"°";
                     let threeDaysTempLow = Math.round(data.daily[3].temp.min);
                     document.querySelector(".threeDaysTempLow").innerText = "low: " +threeDaysTempLow+"°";
+                    let fourDaysTempLow = Math.round(data.daily[4].temp.min);
+                    document.querySelector(".fourDaysTempLow").innerText = "high: "+fourDaysTempLow+"°";
+                    let fiveDaysTempLow = Math.round(data.daily[5].temp.min);
+                    document.querySelector(".fiveDaysTempLow").innerText = "high: "+fiveDaysTempLow+"°";
+                    let sixDaysTempLow = Math.round(data.daily[6].temp.min);
+                    document.querySelector(".sixDaysTempLow").innerText = "high: "+sixDaysTempLow+"°";
+
                     let tomorrowIcon = data.daily[1].weather[0].icon;
                     let twoDaysIcon = data.daily[2].weather[0].icon;
                     let threeDaysIcon = data.daily[3].weather[0].icon;
+                    let fourDaysIcon = data.daily[4].weather[0].icon;
+                    let fiveDaysIcon = data.daily[5].weather[0].icon;
+                    let sixDaysIcon = data.daily[6].weather[0].icon;
+
                     document.querySelector(".tomorrowIcon").src="https://openweathermap.org/img/wn/"+tomorrowIcon+".png";
                     document.querySelector(".twoDaysIcon").src="https://openweathermap.org/img/wn/"+twoDaysIcon+".png";
                     document.querySelector(".threeDaysIcon").src="https://openweathermap.org/img/wn/"+threeDaysIcon+".png";
+                    document.querySelector(".fourDaysIcon").src="https://openweathermap.org/img/wn/"+fourDaysIcon+".png"
+                    document.querySelector(".fiveDaysIcon").src="https://openweathermap.org/img/wn/"+fiveDaysIcon+".png"
+                    document.querySelector(".sixDaysIcon").src="https://openweathermap.org/img/wn/"+sixDaysIcon+".png"
 
                     let tomorrowDate = new Date();
                     tomorrowDate.setDate(new Date().getDate() + 1);
@@ -84,7 +105,21 @@ let weather = {
                     threeDaysDate.setDate(new Date().getDate() + 3);
                     let weekday3=threeDaysDate.toLocaleDateString('en-us', { weekday:"short"});
                     document.querySelector(".weekday3").innerText=weekday3;
-                })
+
+                    let fourDaysDate = new Date();
+                    fourDaysDate.setDate(new Date().getDate() + 4);
+                    let weekday4=fourDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday4").innerText=weekday4;
+
+                    let fiveDaysDate = new Date();
+                    fiveDaysDate.setDate(new Date().getDate() + 5);
+                    let weekday5=fiveDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday5").innerText=weekday5;
+
+                    let sixDaysDate = new Date();
+                    sixDaysDate.setDate(new Date().getDate() + 6);
+                    let weekday6=sixDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday6").innerText=weekday6;                })
             }
             else{
                 return fetch(
@@ -124,18 +159,39 @@ let weather = {
                     document.querySelector(".twoDaysTempHigh").innerText = "high: "+twoDaysTempHigh+"°";
                     let threeDaysTempHigh = Math.round(data.daily[3].temp.max);
                     document.querySelector(".threeDaysTempHigh").innerText = "high: "+threeDaysTempHigh+"°";
+                    let fourDaysTempHigh = Math.round(data.daily[4].temp.max);
+                    document.querySelector(".fourDaysTempHigh").innerText = "high: "+fourDaysTempHigh+"°";
+                    let fiveDaysTempHigh = Math.round(data.daily[5].temp.max);
+                    document.querySelector(".fiveDaysTempHigh").innerText = "high: "+fiveDaysTempHigh+"°";
+                    let sixDaysTempHigh = Math.round(data.daily[6].temp.max);
+                    document.querySelector(".sixDaysTempHigh").innerText = "high: "+sixDaysTempHigh+"°";
+                    
                     let tomorrowTempLow = Math.round(data.daily[1].temp.min);
                     document.querySelector(".tomorrowTempLow").innerText = "low: "+tomorrowTempLow+"°";
                     let twoDaysTempLow = Math.round(data.daily[2].temp.min);
                     document.querySelector(".twoDaysTempLow").innerText = "low: " +twoDaysTempLow+"°";
                     let threeDaysTempLow = Math.round(data.daily[3].temp.min);
                     document.querySelector(".threeDaysTempLow").innerText = "low: " +threeDaysTempLow+"°";
+                    let fourDaysTempLow = Math.round(data.daily[4].temp.min);
+                    document.querySelector(".fourDaysTempLow").innerText = "high: "+fourDaysTempLow+"°";
+                    let fiveDaysTempLow = Math.round(data.daily[5].temp.min);
+                    document.querySelector(".fiveDaysTempLow").innerText = "high: "+fiveDaysTempLow+"°";
+                    let sixDaysTempLow = Math.round(data.daily[6].temp.min);
+                    document.querySelector(".sixDaysTempLow").innerText = "high: "+sixDaysTempLow+"°";
+
                     let tomorrowIcon = data.daily[1].weather[0].icon;
                     let twoDaysIcon = data.daily[2].weather[0].icon;
                     let threeDaysIcon = data.daily[3].weather[0].icon;
+                    let fourDaysIcon = data.daily[4].weather[0].icon;
+                    let fiveDaysIcon = data.daily[5].weather[0].icon;
+                    let sixDaysIcon = data.daily[6].weather[0].icon;
+
                     document.querySelector(".tomorrowIcon").src="https://openweathermap.org/img/wn/"+tomorrowIcon+".png";
                     document.querySelector(".twoDaysIcon").src="https://openweathermap.org/img/wn/"+twoDaysIcon+".png";
                     document.querySelector(".threeDaysIcon").src="https://openweathermap.org/img/wn/"+threeDaysIcon+".png";
+                    document.querySelector(".fourDaysIcon").src="https://openweathermap.org/img/wn/"+fourDaysIcon+".png"
+                    document.querySelector(".fiveDaysIcon").src="https://openweathermap.org/img/wn/"+fiveDaysIcon+".png"
+                    document.querySelector(".sixDaysIcon").src="https://openweathermap.org/img/wn/"+sixDaysIcon+".png"
 
                     let tomorrowDate = new Date();
                     tomorrowDate.setDate(new Date().getDate() + 1);
@@ -151,6 +207,21 @@ let weather = {
                     threeDaysDate.setDate(new Date().getDate() + 3);
                     let weekday3=threeDaysDate.toLocaleDateString('en-us', { weekday:"short"});
                     document.querySelector(".weekday3").innerText=weekday3;
+
+                    let fourDaysDate = new Date();
+                    fourDaysDate.setDate(new Date().getDate() + 4);
+                    let weekday4=fourDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday4").innerText=weekday4;
+
+                    let fiveDaysDate = new Date();
+                    fiveDaysDate.setDate(new Date().getDate() + 5);
+                    let weekday5=fiveDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday5").innerText=weekday5;
+
+                    let sixDaysDate = new Date();
+                    sixDaysDate.setDate(new Date().getDate() + 6);
+                    let weekday6=sixDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday6").innerText=weekday6;
                 })
             }
         })
@@ -208,18 +279,39 @@ let weather = {
                     document.querySelector(".twoDaysTempHigh").innerText = "high: "+twoDaysTempHigh+"°";
                     let threeDaysTempHigh = Math.round(data.daily[3].temp.max);
                     document.querySelector(".threeDaysTempHigh").innerText = "high: "+threeDaysTempHigh+"°";
+                    let fourDaysTempHigh = Math.round(data.daily[4].temp.max);
+                    document.querySelector(".fourDaysTempHigh").innerText = "high: "+fourDaysTempHigh+"°";
+                    let fiveDaysTempHigh = Math.round(data.daily[5].temp.max);
+                    document.querySelector(".fiveDaysTempHigh").innerText = "high: "+fiveDaysTempHigh+"°";
+                    let sixDaysTempHigh = Math.round(data.daily[6].temp.max);
+                    document.querySelector(".sixDaysTempHigh").innerText = "high: "+sixDaysTempHigh+"°";
+                    
                     let tomorrowTempLow = Math.round(data.daily[1].temp.min);
                     document.querySelector(".tomorrowTempLow").innerText = "low: "+tomorrowTempLow+"°";
                     let twoDaysTempLow = Math.round(data.daily[2].temp.min);
                     document.querySelector(".twoDaysTempLow").innerText = "low: " +twoDaysTempLow+"°";
                     let threeDaysTempLow = Math.round(data.daily[3].temp.min);
                     document.querySelector(".threeDaysTempLow").innerText = "low: " +threeDaysTempLow+"°";
+                    let fourDaysTempLow = Math.round(data.daily[4].temp.min);
+                    document.querySelector(".fourDaysTempLow").innerText = "high: "+fourDaysTempLow+"°";
+                    let fiveDaysTempLow = Math.round(data.daily[5].temp.min);
+                    document.querySelector(".fiveDaysTempLow").innerText = "high: "+fiveDaysTempLow+"°";
+                    let sixDaysTempLow = Math.round(data.daily[6].temp.min);
+                    document.querySelector(".sixDaysTempLow").innerText = "high: "+sixDaysTempLow+"°";
+
                     let tomorrowIcon = data.daily[1].weather[0].icon;
                     let twoDaysIcon = data.daily[2].weather[0].icon;
                     let threeDaysIcon = data.daily[3].weather[0].icon;
+                    let fourDaysIcon = data.daily[4].weather[0].icon;
+                    let fiveDaysIcon = data.daily[5].weather[0].icon;
+                    let sixDaysIcon = data.daily[6].weather[0].icon;
+
                     document.querySelector(".tomorrowIcon").src="https://openweathermap.org/img/wn/"+tomorrowIcon+".png";
                     document.querySelector(".twoDaysIcon").src="https://openweathermap.org/img/wn/"+twoDaysIcon+".png";
                     document.querySelector(".threeDaysIcon").src="https://openweathermap.org/img/wn/"+threeDaysIcon+".png";
+                    document.querySelector(".fourDaysIcon").src="https://openweathermap.org/img/wn/"+fourDaysIcon+".png"
+                    document.querySelector(".fiveDaysIcon").src="https://openweathermap.org/img/wn/"+fiveDaysIcon+".png"
+                    document.querySelector(".sixDaysIcon").src="https://openweathermap.org/img/wn/"+sixDaysIcon+".png"
 
                     let tomorrowDate = new Date();
                     tomorrowDate.setDate(new Date().getDate() + 1);
@@ -235,7 +327,21 @@ let weather = {
                     threeDaysDate.setDate(new Date().getDate() + 3);
                     let weekday3=threeDaysDate.toLocaleDateString('en-us', { weekday:"short"});
                     document.querySelector(".weekday3").innerText=weekday3;
-                })
+
+                    let fourDaysDate = new Date();
+                    fourDaysDate.setDate(new Date().getDate() + 4);
+                    let weekday4=fourDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday4").innerText=weekday4;
+
+                    let fiveDaysDate = new Date();
+                    fiveDaysDate.setDate(new Date().getDate() + 5);
+                    let weekday5=fiveDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday5").innerText=weekday5;
+
+                    let sixDaysDate = new Date();
+                    sixDaysDate.setDate(new Date().getDate() + 6);
+                    let weekday6=sixDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday6").innerText=weekday6;                })
             }
             else{
                 return fetch(
@@ -276,18 +382,39 @@ let weather = {
                     document.querySelector(".twoDaysTempHigh").innerText = "high: "+twoDaysTempHigh+"°";
                     let threeDaysTempHigh = Math.round(data.daily[3].temp.max);
                     document.querySelector(".threeDaysTempHigh").innerText = "high: "+threeDaysTempHigh+"°";
+                    let fourDaysTempHigh = Math.round(data.daily[4].temp.max);
+                    document.querySelector(".fourDaysTempHigh").innerText = "high: "+fourDaysTempHigh+"°";
+                    let fiveDaysTempHigh = Math.round(data.daily[5].temp.max);
+                    document.querySelector(".fiveDaysTempHigh").innerText = "high: "+fiveDaysTempHigh+"°";
+                    let sixDaysTempHigh = Math.round(data.daily[6].temp.max);
+                    document.querySelector(".sixDaysTempHigh").innerText = "high: "+sixDaysTempHigh+"°";
+                    
                     let tomorrowTempLow = Math.round(data.daily[1].temp.min);
                     document.querySelector(".tomorrowTempLow").innerText = "low: "+tomorrowTempLow+"°";
                     let twoDaysTempLow = Math.round(data.daily[2].temp.min);
                     document.querySelector(".twoDaysTempLow").innerText = "low: " +twoDaysTempLow+"°";
                     let threeDaysTempLow = Math.round(data.daily[3].temp.min);
                     document.querySelector(".threeDaysTempLow").innerText = "low: " +threeDaysTempLow+"°";
+                    let fourDaysTempLow = Math.round(data.daily[4].temp.min);
+                    document.querySelector(".fourDaysTempLow").innerText = "high: "+fourDaysTempLow+"°";
+                    let fiveDaysTempLow = Math.round(data.daily[5].temp.min);
+                    document.querySelector(".fiveDaysTempLow").innerText = "high: "+fiveDaysTempLow+"°";
+                    let sixDaysTempLow = Math.round(data.daily[6].temp.min);
+                    document.querySelector(".sixDaysTempLow").innerText = "high: "+sixDaysTempLow+"°";
+
                     let tomorrowIcon = data.daily[1].weather[0].icon;
                     let twoDaysIcon = data.daily[2].weather[0].icon;
                     let threeDaysIcon = data.daily[3].weather[0].icon;
+                    let fourDaysIcon = data.daily[4].weather[0].icon;
+                    let fiveDaysIcon = data.daily[5].weather[0].icon;
+                    let sixDaysIcon = data.daily[6].weather[0].icon;
+
                     document.querySelector(".tomorrowIcon").src="https://openweathermap.org/img/wn/"+tomorrowIcon+".png";
                     document.querySelector(".twoDaysIcon").src="https://openweathermap.org/img/wn/"+twoDaysIcon+".png";
                     document.querySelector(".threeDaysIcon").src="https://openweathermap.org/img/wn/"+threeDaysIcon+".png";
+                    document.querySelector(".fourDaysIcon").src="https://openweathermap.org/img/wn/"+fourDaysIcon+".png"
+                    document.querySelector(".fiveDaysIcon").src="https://openweathermap.org/img/wn/"+fiveDaysIcon+".png"
+                    document.querySelector(".sixDaysIcon").src="https://openweathermap.org/img/wn/"+sixDaysIcon+".png"
 
                     let tomorrowDate = new Date();
                     tomorrowDate.setDate(new Date().getDate() + 1);
@@ -303,7 +430,21 @@ let weather = {
                     threeDaysDate.setDate(new Date().getDate() + 3);
                     let weekday3=threeDaysDate.toLocaleDateString('en-us', { weekday:"short"});
                     document.querySelector(".weekday3").innerText=weekday3;
-                })
+
+                    let fourDaysDate = new Date();
+                    fourDaysDate.setDate(new Date().getDate() + 4);
+                    let weekday4=fourDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday4").innerText=weekday4;
+
+                    let fiveDaysDate = new Date();
+                    fiveDaysDate.setDate(new Date().getDate() + 5);
+                    let weekday5=fiveDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday5").innerText=weekday5;
+
+                    let sixDaysDate = new Date();
+                    sixDaysDate.setDate(new Date().getDate() + 6);
+                    let weekday6=sixDaysDate.toLocaleDateString('en-us', { weekday:"short"});
+                    document.querySelector(".weekday6").innerText=weekday6;                })
             }
         })
     }
