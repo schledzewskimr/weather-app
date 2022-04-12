@@ -230,5 +230,10 @@ input:checked + .slider:before {
         justify-content: start;
         align-items:none;
         overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .futureWeather::-webkit-scrollbar { /* Chrome, Safari */
+        display: none;
     }
 }
